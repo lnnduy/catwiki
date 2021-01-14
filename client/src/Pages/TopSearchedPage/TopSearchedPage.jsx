@@ -44,7 +44,7 @@ function TopSearchedPage() {
                 margin: 0,
                 textDecoration: "none",
               }}
-              to={`/${breedId}`}
+              to={`/${breed.id}`}
             >
               {i + 1}. {breed.name}
             </Link>
