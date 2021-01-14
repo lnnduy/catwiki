@@ -1,0 +1,82 @@
+@import "./styles/search-box.css";
+@import "./styles/top-searched.css";
+@import "./styles/home-article.css";
+@import "./styles/breed-details.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 10%;
+  font-family: "Montserrat";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.header {
+  width: 100%;
+  padding: 1px 5px;
+  z-index: 3;
+  background-color: white;
+  margin-bottom: 24px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.brand {
+  font-family: "Mystery Quest";
+}
+
+.header .brand:hover {
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  background-color: #000;
+  color: white;
+  padding: 0 120px;
+  box-sizing: border-box;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  z-index: 3;
+}
+
+.see-more-link {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: #4d270c;
+  text-decoration: none;
+}
+
+.see-more-link p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 1080px) {
+  .header {
+    width: 100%;
+    padding: 0 20px;
+  }
+  body {
+    padding: 0;
+  }
+  .footer {
+    width: 100%;
+    align-content: center;
+    padding: 0 12px;
+    flex-direction: column;
+  }
+}
