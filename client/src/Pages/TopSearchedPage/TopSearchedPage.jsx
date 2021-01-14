@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 function TopSearchedPage() {
   const { topSearchedBreeds } = useSelector((state) => state);
@@ -35,16 +36,17 @@ function TopSearchedPage() {
             />
           </div>
           <div style={{ padding: "10px 70px", width: "calc(100% - 200px" }}>
-            <p
+            <Link
               style={{
                 fontSize: "2.3rem",
                 color: "#291507",
                 fontWeight: 600,
                 margin: 0,
+                textDecoration: "none",
               }}
             >
               {i + 1}. {breed.name}
-            </p>
+            </Link>
             <p>{breed.description}</p>
           </div>
         </div>
